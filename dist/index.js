@@ -32,8 +32,14 @@ var twConfig = function twConfig() {
 
   if (fs.existsSync(customConfig)) {
     extras = require(customConfig);
+  } else {
+    var parentDir = path.resolve(process.cwd(), '..');
+    customConfig = path.join(parentDir, 'tailwind.config.js');
+    if (fs.existsSync(customConfig)) {
+      extras = require(customConfig);
+    }
   }
-
+  
   extras.target = 'ie11';
   return config(extras);
 };
