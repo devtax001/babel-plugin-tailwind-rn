@@ -201,7 +201,14 @@ postcss([tailwind(twConfig())]).process(source, {
   console.error(error.stack);
   process.exit(1);
 });
-fs.writeFileSync("".concat(__dirname, "/screens.json"), JSON.stringify(config().theme.screens, null, '\t'));
+
+const _screens = {
+  sm: '640px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px',
+};
+fs.writeFileSync("".concat(__dirname, "/screens.json"), JSON.stringify(_screens, null, '\t'));
 
 module.exports = function (_ref4) {
   var t = _ref4.types;
