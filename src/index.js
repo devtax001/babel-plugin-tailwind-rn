@@ -90,7 +90,7 @@ const supportedUtilities = [
   // Font style
   /^(not-)?italic$/,
   // Font weight
-  /^font-(hairline|thin|light|normal|medium|semibold|bold|extrabold|black)/,
+  /^font-(n|nm|nb|hairline|thin|light|normal|medium|semibold|bold|extrabold|black)/,
   // Letter spacing
   /^tracking-/,
   // Line height

@@ -39,7 +39,7 @@ var twConfig = function twConfig() {
       extras = require(customConfig);
     }
   }
-  
+
   extras.target = 'ie11';
   return config(extras);
 };
@@ -89,7 +89,7 @@ var supportedUtilities = [// Flexbox
 /^(min-w-|max-w-|min-h-0|min-h-full|max-h-full)/, // Font size
 /^text-/, // Font style
 /^(not-)?italic$/, // Font weight
-/^font-(hairline|thin|light|normal|medium|semibold|bold|extrabold|black)/, // Letter spacing
+/^font-(n|nm|nb|hairline|thin|light|normal|medium|semibold|bold|extrabold|black)/, // Letter spacing
 /^tracking-/, // Line height
 /^leading-\d+/, // Text align, color, opacity
 /^text-/, // Text transform
