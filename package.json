@@ -44,7 +44,7 @@
   },
   "peerDependencies": {
     "postcss": "^7",
-    "react": "^16",
+    "react": "^17",
     "react-native": "^0",
     "tailwindcss": "^1.4"
   }
